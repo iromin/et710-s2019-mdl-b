@@ -7,7 +7,9 @@
     <title>Stop the nag</title>
 
     <!-- Begin angularjs -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-animate.min.js"></script>
+    <script src="js/vendor/angular-route.min.js"></script>
     <!-- End angularjs -->
 
 
@@ -36,19 +38,56 @@
     <link rel="stylesheet" href="css/cotent.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
+
   <body>
     <!-- Begin nav -->
+    <div data-sticky-container>
+  <div class="sticky" data-sticky data-margin-top="0">
+    <nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <a class="topbar-responsive-logo" href="#"><strong>Site Title</strong></a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</nav>
+
+
     <!-- End nav -->
 
     <!-- Begin subav -->
     <!-- End subav -->
 
     <!-- Begin header -->
+
     <!-- End header -->
 
     <!-- Begin content -->
 
     <!-- Begin angularjs -->
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
     <!-- End angularjs -->
 
     <!-- Begin data tables -->
